@@ -1,6 +1,6 @@
 Declare,metatab-latest
-Title,
-Description,
+Title,California Law Enforcement Agencies
+Description,California's county and agency level context data
 Identifier,3a52abc7-fd4a-4c1e-ac43-151818391b22
 Name,openjustice.doj.ca.gov-agencies-1.1.1
 Dataset,agencies
@@ -14,7 +14,7 @@ Version.Major,1
 Version.Minor,1
 Version.Patch,1
 Created,2020-06-16T23:20:11
-Modified,2020-06-16T23:20:12
+Modified,2020-06-16T23:41:53
 Giturl,https://github.com/metatab-packages/policedata-collection.git
 ""
 Section,Contacts,Email,Organization,Url
@@ -26,5 +26,27 @@ Documentation,file:README.md,README,,
 Section,References,Name,Description,
 ""
 Section,Resources,Name,Description,
+Datafile,https://data-openjustice.doj.ca.gov/sites/default/files/2017-03/ca_county_agency_contextual_indicators_2009-2014_05-03-2016.csv,ca_lea_demo,California Law Enforcement Agencies and demographic statistics for their service areas.,
+Datafile,https://data-openjustice.doj.ca.gov/sites/default/files/dataset/2019-06/NCIC%20Code%20Jurisdiction%20List%20060519.xlsx,ca_lea_ncic,"California LEA NCIC codes, names, and years they actively reported.",
 ""
-Section,Schema,DataType,AltName,Description
+Section,Schema,DataType,AltName,Description,Has_Codes
+Table,ca_lea_demo,,,,
+Table.Column,year,integer,,,
+Table.Column,county,string,,,
+Table.Column,agency_name,string,,,
+Table.Column,agency_code,string,,,
+Table.Column,less_than_high_school,number,,,
+Table.Column,high_school_or_higher,number,,,
+Table.Column,bachelors_or_higher,number,,,
+Table.Column,per_capita_income,integer,,,
+Table.Column,median_income,integer,,,
+Table.Column,poverty_rate,number,,,
+Table.Column,employment_rate,number,,,
+Table.Column,unemployment_rate,number,,,
+Table,ca_lea_ncic,,,,
+Table.Column,CntyCode,integer,cntycode,,
+Table.Column,County,string,county,,
+Table.Column,Code,string,code,,
+Table.Column,Agency,string,agency,,
+Table.Column,Start,date,start,,T
+Table.Column,End,date,end,,T
