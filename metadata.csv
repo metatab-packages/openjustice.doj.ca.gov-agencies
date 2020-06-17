@@ -2,19 +2,20 @@ Declare,metatab-latest
 Title,California Law Enforcement Agencies
 Description,California's county and agency level context data
 Identifier,3a52abc7-fd4a-4c1e-ac43-151818391b22
-Name,openjustice.doj.ca.gov-agencies-1.1.1
+Name,openjustice.doj.ca.gov-agencies-1.1.2
 Dataset,agencies
 Origin,openjustice.doj.ca.gov
 Time,
 Space,
 Grain,
 Variant,
-Version,1.1.1
+Version,1.1.2
 Version.Major,1
 Version.Minor,1
-Version.Patch,1
+Version.Patch,2
 Created,2020-06-16T23:20:11
-Modified,2020-06-16T23:41:53
+Modified,2020-06-17T21:37:40
+UpdateFrequency,P3M
 Giturl,https://github.com/metatab-packages/policedata-collection.git
 ""
 Section,Contacts,Email,Organization,Url
